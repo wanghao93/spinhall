@@ -14,7 +14,6 @@ program bidebug2
     c    mpiifort -CB bidebug2.F -L /tmp_mnt/local/intel/mkl/current/lib/em64t -lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lpthread -o bidebug2.x
     c
     c     Compilation on Juropa: mpif90 -O3 -r8 bidebug2.F -lmkl_lapack -lmkl -lz -lguide -lpthread -o bidebug2.x 
-    c
     c     Compilation on Jugene: /bgsys/drivers/ppcfloor/comm/bin/mpixlf95_r -O2 -qfixed=72 -qrealsize=8 -qnosave -qdpc=e -I/bgsys/drivers/ppcfloor/comm/include -qarch=450 -qtune=450 bidebug2.F -L/opt/ibmcmp/xlmass/bg/4.4/bglib -lmassv -L/bgsys/drivers/ppcfloor/lib -L/bgsys/local/lib -L/usr/local/bg_soft/lapack/lib -llapack -L/bgsys/local/lib -lesslbg -o bidebug2.x
     c*************************************************
           implicit none
