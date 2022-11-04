@@ -634,9 +634,6 @@ program bidebug2
           call mpi_barrier(mpi_comm_world,ierr)
           call MPI_Finalize(ierr)
     
-    
-    
-    
           end program bidebug2
     
     !!*****************************************************************************************
